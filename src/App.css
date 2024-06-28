@@ -41,6 +41,10 @@
   color: #888;
 }
 
+.app {
+  display: flex;
+}
+
 .widgets {
   background-color: aquamarine;
   color: #000;
@@ -48,8 +52,13 @@
 
 .page {
   background-color: aqua;
+  color: #000;
+  height: 300px;
   width: 200px;
   display: flex;
   flex-direction: column;
-  border: solid 1px #000;
+  border: solid 2px #000;
+}
+
+.dropped-widget {
 }
