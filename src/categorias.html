@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const inventory = [
+        {
+          name: "asparagus",
+          type: "vegetables",
+          quantity: 5,
+          categoria: { name: "Vegetales" },
+        },
+        {
+          name: "bananas",
+          type: "fruit",
+          quantity: 0,
+          categoria: { name: "Frutas" },
+        },
+        {
+          name: "goat",
+          type: "meat",
+          quantity: 23,
+          categoria: { name: "Carne" },
+        },
+        {
+          name: "cherries",
+          type: "fruit",
+          quantity: 5,
+          categoria: { name: "Frutas" },
+        },
+        {
+          name: "fish",
+          type: "meat",
+          quantity: 22,
+          categoria: { name: "Carne" },
+        },
+      ];
+      const myCallback = ({ quantity }) => {
+        return quantity > 5 ? "ok" : "restock";
+      };
+
+      const result = Object.groupBy(
+        inventory,
+        ({ categoria }) => categoria.name
+      );
+
+      console.log(result);
+    </script>
+  </body>
+</html>
