@@ -12,6 +12,6 @@ export const DropArea = ({ onDrop }) => {
       }}
       onDragOver={(e) => e.preventDefault()}
       className={`${showDrop ? "drop_area" : "hide_drop"}`}
-    >DropArea</div>
+    >Coloque el componente aquí</div>
   </>)
 }

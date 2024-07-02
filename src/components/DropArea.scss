@@ -15,11 +15,6 @@
   opacity: 0;
 }
 */
-@keyframes linearGradientMove {
-  100% {
-    background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
-  }
-}
 
 .drop_area {
   background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
@@ -29,31 +24,17 @@
   background-size: 4px 2px, 4px 2px, 2px 4px, 2px 4px;
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 15px;
+  margin: 15px auto;
   width: 80%;
   animation: linearGradientMove 0.3s infinite linear;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
-.outline {
-  border: 1px solid #333;
-  outline: 1px solid #333;
-  outline-offset: -1px;
-  transition: all 0.3s linear;
-  cursor: pointer;
-
-  &:hover,
-  :active {
-    border: 1px solid transparent;
-    outline: 1px solid transparent;
-    background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
-      linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
-      linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
-      linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
-    background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
-    background-position: 0 0, 0 100%, 0 0, 100% 0;
-    animation: linearGradientMove 0.3s infinite linear;
+@keyframes linearGradientMove {
+  100% {
+    background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
   }
 }
 
